@@ -242,8 +242,8 @@ button {
     .wrapper {
         max-width: $width940;
         padding-top: 72px;
+        padding-bottom: 72px;
 
-        // .section-title
 
         .items {
             min-height: 500px;
@@ -609,6 +609,125 @@ footer {
     
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: auto !important;
+    }
+
+    .our-story {
+        .wrapper {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .section-expertise {
+        .wrapper {
+            .items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 25px;
+            }
+        }
+    }
+
+    .amazing-team {
+        .wrapper {
+            .team {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 25px;
+            }
+        }
+    }
+
+    .our-works {
+        .images {
+            .photo {
+                width: 267px;
+                height: 200px;
+            }
+        }
+    }
+
+    .section-form {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+        }
+    }
+
+    footer {
+        .wrapper {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+
+            .subscribe {
+                .stay-in-touch {
+                    grid-gap: 30px;
+                }
+            }
+        }
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        .wrapper {
+            header {
+                .menu {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .section-expertise {
+        .wrapper {
+            .items {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .amazing-team {
+        .wrapper {
+            .team {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .section-form {
+        .wrapper {
+            .form {
+                form {
+                    textarea {
+                        min-width: unset;
+                    }
+                }
+            }
+
+            .our-client {
+                .client {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    footer {
+        .wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }
